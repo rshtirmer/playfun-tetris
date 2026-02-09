@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-ogp-key" content="2McEEHXXPwA27m6JZFQAmFoyYKccyq3bqm3EdPnusUdU" />
+  <script src="https://sdk.play.fun"></script>
   <title>Tetris - Play.fun</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -154,6 +156,27 @@
   </div>
 
   <script>
+    // ── Play.fun SDK ──
+    let sdk = null;
+    let sdkReady = false;
+
+    if (typeof OpenGameSDK !== 'undefined') {
+      sdk = new OpenGameSDK({
+        ui: { usePointsWidget: true },
+        logLevel: 1,
+      });
+
+      sdk.on('OnReady', () => {
+        sdkReady = true;
+        console.log('Play.fun SDK ready!');
+      });
+
+      sdk.on('SavePointsSuccess', () => console.log('Score saved!'));
+      sdk.on('SavePointsFailed', () => console.log('Save failed'));
+
+      sdk.init({ gameId: 'b870f11d-309d-42b7-be8f-e7169ecd40c0' });
+    }
+
     // ── Constants ──
     const COLS = 10;
     const ROWS = 20;
