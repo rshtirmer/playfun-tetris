@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="24" fill="#0a0a1a"/>
+  <!-- T piece -->
+  <rect x="88" y="28" width="40" height="40" rx="4" fill="#a000f0"/>
+  <rect x="48" y="68" width="40" height="40" rx="4" fill="#a000f0"/>
+  <rect x="88" y="68" width="40" height="40" rx="4" fill="#a000f0"/>
+  <rect x="128" y="68" width="40" height="40" rx="4" fill="#a000f0"/>
+  <!-- L piece -->
+  <rect x="48" y="128" width="40" height="40" rx="4" fill="#f0a000"/>
+  <rect x="48" y="168" width="40" height="40" rx="4" fill="#f0a000"/>
+  <rect x="88" y="168" width="40" height="40" rx="4" fill="#f0a000"/>
+  <rect x="128" y="168" width="40" height="40" rx="4" fill="#f0a000"/>
+  <!-- I piece -->
+  <rect x="168" y="28" width="40" height="40" rx="4" fill="#00f0f0"/>
+  <rect x="168" y="68" width="40" height="40" rx="4" fill="#00f0f0"/>
+  <rect x="168" y="108" width="40" height="40" rx="4" fill="#00f0f0"/>
+  <rect x="168" y="148" width="40" height="40" rx="4" fill="#00f0f0"/>
+  <!-- S piece -->
+  <rect x="88" y="128" width="40" height="40" rx="4" fill="#00f000"/>
+  <rect x="128" y="128" width="40" height="40" rx="4" fill="#00f000"/>
+</svg>
